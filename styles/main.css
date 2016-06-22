@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+select {
+  clear: both;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 6px;
+  font-weight: bold;
+}
+
+iframe {
+  min-height: 780px;
+  background-color: transparent;
+  border: 2px solid #949494;
+  padding-top: 10px;
+}
+
+span {
+  text-transform: uppercase;
+  margin: 3px;
+  font-size: 11px;
+}

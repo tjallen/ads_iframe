@@ -1,0 +1,315 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Travel Republic 300x600 Summer Lates</title>
+  <meta name="description" content="Travel Republic">
+  <meta name="author" content="Ben Sharp @ Antidote London">
+  <meta name="ad.size" content="width=480,height=320">
+
+  <!-- ClickTag -->
+  <script type="text/javascript">
+    var clickTag = "http://www.google.com";
+  </script>
+
+  <style type="text/css">
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: grey;
+  }
+
+  #container{
+    position: relative;
+    width: 480px;
+    height: 320px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  #clickArea{
+    display: block;
+    cursor: pointer;
+  }
+
+  .frame{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  /* Asset Styles */
+
+  .asset{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:url(sprite.png);
+    z-index: 0;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+  #logo{
+    top: 535px;
+    left: 22px;
+    background-position: -0px -805px;
+    width: 252px;
+    height: 40px;
+  }
+
+  #background{
+     background-position: -0px -0px; width: 480px; height: 320px;
+  }
+
+  #fr1__copy-1{
+    background-position: -0px -320px; width: 480px; height: 320px;
+    top: 0;
+    left: 0;
+  }
+
+  #fr1__copy-2{
+    background-position: -0px -640px; width: 480px; height: 320px;
+    top: 0;
+    left: 0;
+  }
+
+  #fr2__copy-line-1{
+    background-position: -0px -960px; width: 480px; height: 320px;
+    top: 0;
+    left: 0;
+  }
+
+  #fr2__copy-line-2{
+    background-position: -0px -1280px; width: 480px; height: 320px;
+    top: 0;
+    left: 0;
+  }
+
+  #fr3{
+    width: 100%;
+    height: 100%;
+  }
+
+  #fr3__logo{
+    background-position: -0px -1600px; width: 252px; height: 172px;
+    top: 29px;
+    left: 118px;
+    z-index: 1;
+  }
+
+  #fr3__deal-stamp{
+    background-position: -252px -1600px; width: 208px; height: 97px;
+    top: 396px;
+    left: 45px;
+    z-index: 1;
+  }
+
+  .book-copy{
+    top: 16px;
+  }
+
+  #fr3__book-now{
+    width: 174px;
+    height: 55px;
+    background-image: none;
+    background-color: #ee8245;
+    top: 224px;
+    left: 152px;
+    z-index: 1;
+  }
+
+  #fr3_book-copy-wrap{
+    position: relative;
+  }
+
+  #fr3__book-now__flights{
+    background-position: -252px -1697px; width: 131px; height: 22px;
+    left: 22px;
+  }
+
+  #fr3__book-now__hotels{
+    background-position: -252px -1719px; width: 126px; height: 22px;
+    left: 204px;
+  }
+
+  #fr3__book-now__now{
+    background-position: -378px -1719px; width: 100px; height: 21px;
+    left: 395px;
+  }
+
+  #fr3__whiteout{
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    background-color: #ffffff;
+    opacity: 0;
+  }
+
+  /* Banner border styles */
+
+  .border{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000000;
+    z-index: 2;
+  }
+
+  #border-top{
+    width: 480px;
+    height: 1px;
+  }
+
+  #border-bottom{
+    top: 319px;
+    width: 480px;
+    height: 1px;
+  }
+
+  #border-left{
+    width: 1px;
+    height: 320px;
+  }
+
+  #border-right{
+    left: 479px;
+    width: 1px;
+    height: 320px;
+  }
+
+</style>
+</head>
+
+  <body>
+  <!-- Banner Container -->
+  <div id="container">
+
+    <!-- Click Area -->
+    <a href="javascript:window.open(window.clickTag, '_blank')">
+
+      <!-- Frames -->
+      <div class="frame" id="fr0">
+        <div class="asset" id="background"></div>
+      </div>
+
+      <div class="frame" id="fr1">
+        <div class="asset" id="fr1__copy-1"></div>
+        <div class="asset" id="fr1__copy-2"></div>
+      </div>
+
+      <div class="frame" id="fr2">
+        <div class="asset" id="fr2__copy-line-1"></div>
+        <div class="asset" id="fr2__copy-line-2"></div>
+      </div>
+
+      <div class="frame" id="fr3">
+        <div id="fr3__logo" class="asset"></div>
+        <div id="fr3__book-now" class="asset">
+          <div id="fr3_book-copy-wrap">
+            <div id="fr3__book-now__flights" class="asset book-copy"></div>
+            <div id="fr3__book-now__hotels" class="asset book-copy"></div>
+            <div id="fr3__book-now__now" class="asset book-copy"></div>
+          </div>
+        </div>
+        <div id="fr3__deal-stamp" class="asset"></div>
+        <div id="fr3__whiteout" class="asset"></div>
+      </div>
+
+      <!-- Border -->
+      <div class="border" id="border-left"></div>
+      <div class="border" id="border-top"></div>
+      <div class="border" id="border-right"></div>
+      <div class="border" id="border-bottom"></div>
+
+    </a>
+    <!-- Click Area end -->
+
+  </div>
+  <!-- Banner container end -->
+
+<script src="js/TweenLite.min.js"></script>
+<script src="js/TimelineLite.min.js"></script>
+<script src="js/plugins/CSSPlugin.min.js"></script>
+
+<script type="text/javascript">
+
+(function(){
+
+  // Banner animation
+  // Define banner elements
+  var frames = document.getElementsByClassName('frame')
+  ,	background = document.getElementById('background')
+  , frame1Copy1 = document.getElementById('fr1__copy-1')
+  , frame1Copy2 = document.getElementById('fr1__copy-2')
+  , frame2Copy1 = document.getElementById('fr2__copy-line-1')
+  , frame2Copy2 = document.getElementById('fr2__copy-line-2')
+  ,	bookNow = document.getElementById('fr3__book-now')
+  , whiteout = document.getElementById('fr3__whiteout')
+  , logo = document.getElementById('fr3__logo')
+  , bookCopyWrap = document.getElementById('fr3_book-copy-wrap')
+  , stamp = document.getElementById('fr3__deal-stamp')
+  // Set up timeline and animations
+  , t1 = new TimelineLite()
+  , t2 = new TimelineLite({paused:true})
+  , xFormOrigin = "50% 50%"
+  , scaleObjFrom = {opacity: 0, scaleX:2, scaleY:2, transformOrigin: xFormOrigin}
+  , scaleObjTo = {opacity: 1, scaleX:1, scaleY:1, transformOrigin: xFormOrigin, onComplete: complete}
+  , loop = 0;
+
+  // Main timeline animation
+  t1.to(frames[0], 0, {opacity:1})
+  .to(frames[1], 0, {opacity:1})
+  .to(frame1Copy1, 0.4, {opacity: 0}, '+=2')
+  .fromTo(frame1Copy2, 0.4, {opacity: 0}, {opacity: 1})
+  .to(frames[1], 0.5, {opacity: 0}, '+=2')
+  .to(frames[2], 0, {opacity: 1})
+  .fromTo(frame2Copy1, 0.4, {opacity: 0}, {opacity: 1})
+  .to(frame2Copy1, 0.4, {opacity: 0}, '+=1.25')
+  .fromTo(frame2Copy2, 0.4, {opacity: 0}, {opacity: 1})
+  .to(frame2Copy2, 0.4, {opacity: 0}, '+=1.25')
+  .to(frames[2], 0.25, {opacity: 0})
+  .to(frames[3], 0, {opacity: 1})
+  .to(whiteout, 1, {opacity: 0.8}, '-=0.5')
+  .fromTo(logo, 0.4, {opacity: 0}, {opacity: 1}, '-=0.35')
+  .fromTo(bookNow, 0.4, {opacity: 0, top: bookNow.offsetTop + 20}, {opacity: 1, top: bookNow.offsetTop}, '-=0.2')
+  .to(bookCopyWrap, 0.3, {left: -180}, '+=0.75')
+  .to(bookCopyWrap, 0.3, {left: -360}, '+=0.75')
+  .fromTo(stamp, 0.2, scaleObjFrom, scaleObjTo, '-=0.3');
+
+  t2.to(logo, 0.4, {opacity: 0}, '+=3')
+  .to(bookNow, 0.4, {opacity: 0}, '-=0.4')
+  .to(stamp, 0.4, {opacity: 0}, '-=0.4')
+  .to(whiteout, 0.4, {opacity: 0}, '-=0.4')
+  .to(frames[1], 0.4, {opacity:1, onComplete: restart});
+
+  function complete(){
+
+    loop++;
+
+    if (loop < 1) {
+      t2.restart();
+    }
+  }
+
+  function restart(){
+
+    t1.restart();
+  }
+
+})();
+
+</script>
+</body>
+</html>
