@@ -1,7 +1,11 @@
+$body--dark: #666;
+$body--light: #BCBEC0;
+$borders: #ddd;
+
 body {
   background-color: white;
   font-family: Helvetica, Arial, sans-serif;
-  color: #666;
+  color: $body--dark;;
   font-size: 15px;
   line-height: 22px;
 }
@@ -18,30 +22,32 @@ header {
   clear: both;
   overflow: auto;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-}
-header .logo {
-  margin: 10px;
+  border-bottom: 1px solid $borders;
+  .logo {
+    margin: 10px;
+  }
 }
 
-ul li, ul dt, ul dd, ol li, ol dt, ol dd, dl li, dl dt, dl dd {
-  margin: 0;
-}
-ul dd, ol dd, dl dd {
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
+ul, ol, dl {
+  li, dt, dd {
+    margin: 0;
+  }
+  dd {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
 }
 
 span.label, dt {
-  color: #BCBEC0;
+  color: $body--light;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
 }
 
 select {
-  color: #666;
+  color: $body--dark;
   clear: both;
   width: 100%;
   margin-bottom: 20px;
@@ -67,5 +73,5 @@ optgroup {
 iframe {
   min-height: 780px;
   background-color: transparent;
-  border: 2px solid #ddd;
+  border: 2px solid $borders;
 }
