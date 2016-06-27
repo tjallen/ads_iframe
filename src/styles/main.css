@@ -3,42 +3,35 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: #666;
   font-size: 15px;
-  line-height: 22px;
-}
+  line-height: 22px; }
 
 .fl {
-  float: left;
-}
+  float: left; }
 
 .fr {
-  float: right;
-}
+  float: right; }
 
 header {
   clear: both;
   overflow: auto;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-}
-header .logo {
-  margin: 10px;
-}
+  border-bottom: 1px solid #ddd; }
+  header .logo {
+    margin: 10px; }
 
 ul li, ul dt, ul dd, ol li, ol dt, ol dd, dl li, dl dt, dl dd {
-  margin: 0;
-}
+  margin: 0; }
+
 ul dd, ol dd, dl dd {
   font-weight: bold;
   font-size: 16px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 span.label, dt {
   color: #BCBEC0;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 select {
   color: #666;
@@ -47,25 +40,55 @@ select {
   margin-bottom: 20px;
   font-size: 16px;
   padding: 6px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 select, option {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 option {
   font-size: 11px;
   margin-bottom: 5px;
-  padding-bottom: 5px;
-}
+  padding-bottom: 5px; }
 
 optgroup {
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 iframe {
   min-height: 780px;
   background-color: transparent;
-  border: 2px solid #ddd;
-}
+  border: 2px solid #ddd; }
+
+.reselect {
+  height: auto;
+  width: 100%;
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 20px; }
+  .reselect.interact {
+    border: 1px solid #5f5f5f; }
+  .reselect .reselect__label {
+    display: none;
+    padding: 5px;
+    background-color: #dedede; }
+    .reselect .reselect__label.visible {
+      display: block; }
+  .reselect .reselect__option {
+    text-transform: uppercase;
+    padding: 6px;
+    display: none; }
+    .reselect .reselect__option:hover {
+      cursor: pointer;
+      color: #fff;
+      background-color: #08B0EA; }
+    .reselect .reselect__option.visible {
+      display: block; }
+    .reselect .reselect__option.active {
+      font-weight: bold;
+      display: block; }
+
+.reselect__flippy {
+  font-weight: bold;
+  position: absolute;
+  top: 6px;
+  right: 8px; }

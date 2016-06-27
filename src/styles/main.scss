@@ -29,9 +29,15 @@ header {
   }
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 ul, ol, dl {
   li, dt, dd {
     margin: 0;
+    padding: 0;
   }
   dd {
     font-weight: bold;

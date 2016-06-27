@@ -2,7 +2,7 @@
   // dom
   var iFrame = $('#ad');
   var selectValue;
-  var reSelect = $('.reselect');
+  var reSelect = $('.reselect__list');
   var reSelectItems = $('.reselect__option');
   /* array of ads we want to show
   src: iframe src/directory name
@@ -21,7 +21,7 @@
   ];
   
   // populate the select from the ads array
-  function newPopulate() {
+  function populate() {
     for (var i = 0; i < ads.length; i++) {
       // set src property to 3 dashes for an optgroup
       // name property defines the label
@@ -36,7 +36,7 @@
         reSelect.append('<li class="reselect__option" data-src="' + ads[i].src + '">' + ads[i].name + '</li>' );
       }
     }
-    console.log('newPopulate() called');
+    console.log('populate() called');
   }
   
   // update the iframe src value
@@ -77,7 +77,7 @@
     console.log('focus out');
   });
 
-  newPopulate();
+  populate();
   init();
   
 })(jQuery);
