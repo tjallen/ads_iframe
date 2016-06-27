@@ -2,6 +2,8 @@ swiftly displaying ads w/ iframe
 
 setup:
 - clone repo
+- drop your ads into src/ads/
+- update src/main.js array if needed
 - npm start for local server
 - npm run build for a dist/ build
 
