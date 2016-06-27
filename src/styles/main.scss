@@ -85,6 +85,11 @@ iframe {
 
 // reselect
 
+.reselect__list {
+  display: none;
+  border-top: 1px solid #dedede;
+}
+
 .reselect {
   height: auto;
   width: 100%;
@@ -94,37 +99,41 @@ iframe {
   margin-bottom: 20px;
   &.interact {
     border: 1px solid #5f5f5f;
-  }
-  .reselect__label {
-    display: none;
-    padding: 5px;
-    background-color: #dedede;
-    &.visible {
+    .item--active {
+    //  display: none;
+    }
+    .reselect__list {
       display: block;
     }
+  }
+  .reselect__label {
+    padding: 5px;
+    background-color: #dedede;
   }
   .reselect__option {
     text-transform: uppercase;
     padding: 6px;
-    display: none;
     &:hover {
       cursor: pointer;
       color: #fff;
       background-color: $antiblue;
     }
-    &.visible {
-      display: block;
-    }
-    &.active {
-      font-weight: bold;
-      display: block;
-    }
+  }
+}
+
+.reselect .item--active {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:hover {
+    cursor: pointer;
   }
 }
 
 .reselect__flippy {
   font-weight: bold;
   position: absolute;
-  top: 6px;
+  top: 15px;
   right: 8px;
 }

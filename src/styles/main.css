@@ -19,8 +19,13 @@ header {
   header .logo {
     margin: 10px; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
 ul li, ul dt, ul dd, ol li, ol dt, ol dd, dl li, dl dt, dl dd {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 ul dd, ol dd, dl dd {
   font-weight: bold;
@@ -58,6 +63,10 @@ iframe {
   background-color: transparent;
   border: 2px solid #ddd; }
 
+.reselect__list {
+  display: none;
+  border-top: 1px solid #dedede; }
+
 .reselect {
   height: auto;
   width: 100%;
@@ -67,28 +76,29 @@ iframe {
   margin-bottom: 20px; }
   .reselect.interact {
     border: 1px solid #5f5f5f; }
+    .reselect.interact .reselect__list {
+      display: block; }
   .reselect .reselect__label {
-    display: none;
     padding: 5px;
     background-color: #dedede; }
-    .reselect .reselect__label.visible {
-      display: block; }
   .reselect .reselect__option {
     text-transform: uppercase;
-    padding: 6px;
-    display: none; }
+    padding: 6px; }
     .reselect .reselect__option:hover {
       cursor: pointer;
       color: #fff;
       background-color: #08B0EA; }
-    .reselect .reselect__option.visible {
-      display: block; }
-    .reselect .reselect__option.active {
-      font-weight: bold;
-      display: block; }
+
+.reselect .item--active {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .reselect .item--active:hover {
+    cursor: pointer; }
 
 .reselect__flippy {
   font-weight: bold;
   position: absolute;
-  top: 6px;
+  top: 15px;
   right: 8px; }
