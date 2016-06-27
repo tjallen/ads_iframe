@@ -49,19 +49,17 @@
   
   // initialize after population
   function init() {
-    // set active class on first elem in select list
-    var firstItem = $('.reselect__option').first();
     // set initial iframe attribute to first item
+    var firstItem = $('.reselect__option').first();
     updateIframeSrc(firstItem.attr('data-src'), firstItem.text());
   }
   
   // handlers for reSelect
   // focus in
   reSelect.attr('tabindex', -1).on('focus', function(event) {
-    event.stopPropagation();
     $(this).addClass('interact');
     // handle a click on child while focused
-    $('.reselect__option').on('click', function() {
+    $('.reselect__option').off().on('click', function() {
       updateIframeSrc($(this).attr('data-src'), $(this).text());
       reSelect.removeClass('interact').blur();
     });
